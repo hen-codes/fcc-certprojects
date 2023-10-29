@@ -1,9 +1,13 @@
 h1 {
-    text-color: black;
+    color: black;
+    font-size: 2em; 
+    text-align: center;
 }
 
 body {
     font-family: sans-serif;
-    text-color: pink; 
-    text-size: 8px;
+    color: pink; 
+    text-align: center;
 }
+
+
