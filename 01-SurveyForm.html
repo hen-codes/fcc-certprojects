@@ -1,14 +1,56 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Survey Form</title>
-  <link href="01-SurveyForm.CSS" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="01-SurveyForm.CSS" rel="stylesheet">
+  </head>
 
-<body>
-  <h1 id="title">Survey Form</h1> 
-  <p id="description">Please fill in the form below to give us your feedback.</p>
-</body>
+  <body>
+    <div class="booxx">
+	<h1 id="title">A little bit about me</h1> 
+    <p id="description">Please tell us about yourself...</p>
+	<form  id="survey-form">
+		<fieldset>
+			<label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter first and family name" required></label>
+			<label for="email" id="email-label">E-mail <input id="email" type="email" placeholder="Enter a valid email-address" required>
+			<label for="number" id="number-label">Birth year <input id="number" type="number" min="1900" max="2020" placeholder="1980">
+			<label for="dropdown">Gender 
+				<select id="dropdown">
+					<option value="enby">non-binary</option>
+					<option value="female">female</option>
+					<option value="male">male</option>
+				</select>
+			</label>
+		</fieldset>
+		
+		<fieldset>
+			<p class="field">I live in:</p>
+				<label><input type="radio" name="continent" value="africa">Africa</label>
+				<label><input type="radio" name="continent" value="america">America</label>
+				<label><input type="radio" name="continent" value="asia">Asia</label>
+				<label><input type="radio" name="continent" value="australia">Australia</label>
+				<label><input type="radio" name="continent" value="europe">Europe</label>
+		</fieldset>
+		
+		<fieldset>
+			<p class="field">I'm interested in:</p>
+				<input id="cb" type="checkbox" name="interests" value="theatre">theatre</input><br>
+				<input id="cb" type="checkbox" name="interests" value="music">music</input><br>
+				<input id="cb" type="checkbox" name="interests" value="movies">movies</input><br>
+		</fieldset>
+		
+		<fieldset>
+			<p class="field">Comments:</p>
+			<textarea id="comments" rows="10" columns="90" placeholder="...more stuff I want to tell you..."></textarea>
+		</fieldset>
+		
+		<button type="submit" id="submit" class="submit-button">Submit</button>
+	
+	</form>
+	</div>
+  </body>
+
+</html>
