@@ -47,6 +47,7 @@ button {
 	color: white;
 	background-color: #4d0f28;
 	margin-top: 2em;
+	margin-left: 1em; 
 }
 
 .field {
@@ -60,5 +61,5 @@ button {
 }
 
 #description {
-	
+	padding-left: 1em;
 }
